@@ -1,13 +1,11 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import PlatoViewSet
-from . import views
-
-router = DefaultRouter()
-router.register(r'platos', PlatoViewSet)
+from django.urls import path
+from django.views.generic import TemplateView
+from core.views import FrontendAppView
 
 urlpatterns = [
-     path('', include(router.urls)),
+    path('', FrontendAppView.as_view(), name='home'),
 ]
+
+
 
 
