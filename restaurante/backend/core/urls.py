@@ -7,7 +7,7 @@ router = DefaultRouter()
 router.register(r'platos', PlatoViewSet)
 
 urlpatterns = [
-    path('', views.home, name='home'),
+     path('', include(router.urls)),
 ]
 
 
