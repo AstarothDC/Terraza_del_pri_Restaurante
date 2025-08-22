@@ -26,36 +26,6 @@ Incluye:
 
 ---
 
-## 📂 Estructura del proyecto
-
-restaurante/
-│
-├── backend/ # Proyecto Django (API pedidos)
-│ ├── manage.py
-│ └── ...
-│
-├── frontend/ # Proyecto React
-│ ├── public/
-│ │ ├── index.html
-│ │ └── images/ # Imágenes de platos
-│ │ ├── hamburguesa_bbq.jpg
-│ │ ├── salchipapa_especial.jpg
-│ │ └── perro_caliente_mixto.jpg
-│ │
-│ ├── src/
-│ │ ├── App.js
-│ │ ├── components/
-│ │ │ ├── About.js
-│ │ │ ├── ChatBot.js
-│ │ │ └── Specials.js
-│ │ └── App.css
-│ │
-│ └── package.json
-│
-└── README.md
-
-
----
 
 ## ⚙️ Instalación y ejecución
 
@@ -64,6 +34,18 @@ restaurante/
 cd frontend
 npm install
 npm start
+```
 Abrir en: http://localhost:3000
 =======
+
+### Backend
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+python manage.py runserver
+```
+Abrir en: http://localhost:8000
 
