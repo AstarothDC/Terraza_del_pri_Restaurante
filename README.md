@@ -36,7 +36,7 @@ npm install
 npm start
 ```
 Abrir en: http://localhost:3000
-=======
+
 
 ### Backend
 ```bash
